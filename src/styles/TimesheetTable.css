@@ -1,0 +1,161 @@
+.timesheet-table {
+  width: 100%;
+  max-width: 1232px;
+  height: auto;
+  min-height: 325px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  height: 50px;
+  padding: 16px;
+  background: hsl(var(--gray-50));
+  border-bottom: 1px solid hsl(var(--gray-200));
+  text-align: left;
+}
+
+.table-header:first-child {
+  border-top-left-radius: 8px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-content span {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: hsl(var(--gray-500));
+}
+
+.header-icon {
+  width: 10px;
+  height: 7px;
+  color: #6B7280;
+  transform: rotate(90deg);
+}
+
+.table-header-center {
+  text-align: center;
+}
+
+.table-header-center span {
+  text-align: center;
+}
+
+.table-cell {
+  height: 50px;
+  padding: 16px;
+  border-bottom: 1px solid hsl(var(--gray-200));
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: hsl(var(--gray-900));
+}
+
+.table-cell-center {
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.status-completed {
+  background: #DEF7EC;
+  color: #03543F;
+}
+
+.status-incomplete {
+  background: #FDF6B2;
+  color: #723B13;
+}
+
+.status-missing {
+  background: #FCE7F3;
+  color: #9F1239;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: hsl(var(--primary));
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1280px) {
+  .timesheet-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .timesheet-table {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-header,
+  .table-cell {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .header-content span {
+    font-size: 11px;
+  }
+
+  .status-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .action-button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    min-width: 600px;
+  }
+
+  .table-header,
+  .table-cell {
+    padding: 8px;
+  }
+}

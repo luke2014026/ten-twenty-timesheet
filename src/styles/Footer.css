@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  padding: 24px;
+  background: white;
+  border-top: 1px solid hsl(var(--gray-200));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: hsl(var(--gray-500));
+  margin: 0;
+}

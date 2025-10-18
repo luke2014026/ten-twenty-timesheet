@@ -1,0 +1,73 @@
+.login-hero {
+  width: 720px;
+  height: 839px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: hsl(var(--primary));
+}
+
+.hero-content {
+  width: 576px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-text {
+  width: 576px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-heading {
+  width: 576px;
+  height: 60px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: white;
+  margin: 0;
+}
+
+.hero-description {
+  width: 576px;
+  height: 96px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: hsl(var(--gray-200));
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .login-hero {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-content,
+  .hero-text,
+  .hero-heading,
+  .hero-description {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+}
