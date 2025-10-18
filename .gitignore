@@ -1,6 +1,14 @@
-node_modules
-.next
-dist
-.env
-.vscode
+# Node modules
+node_modules/
 
+# Next.js build folder
+.next/
+
+# Vite build output
+dist/
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
